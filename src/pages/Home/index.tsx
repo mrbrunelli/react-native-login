@@ -53,7 +53,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 20,
     borderRadius: 20,
-    margin: 10
+    margin: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4
+    },
+    shadowOpacity: 0.50,
+    shadowRadius: 4.84,
+    elevation: 8
   },
   boxItem: {
     flex: 1,
