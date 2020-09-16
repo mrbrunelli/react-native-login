@@ -76,9 +76,8 @@ const styles = StyleSheet.create({
     textAlign: 'left'
   },
   helloView: {
-    width: 400,
-    marginTop: 10,
-    marginLeft: 15
+    width: 300,
+    marginTop: 10
   }
 })
 
