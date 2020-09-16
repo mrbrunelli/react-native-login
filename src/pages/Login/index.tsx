@@ -1,17 +1,22 @@
 import React, { useState } from 'react'
-import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Login = () => {
+  const navigation = useNavigation()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const checkUserData = (): boolean => {
+  const checkUserData = (): void => {
     const mockedUserData = { email: 'matheus.brunelli', password: 'pass@123' }
     const receivedUserData = { email: email, password: password }
     if (receivedUserData.email === mockedUserData.email && receivedUserData.password === mockedUserData.password) {
-      return true
+      navigation.navigate('Home', {
+        email: email
+      })
+    } else {
+      Alert.alert('Incorrectly data', 'Check your user and password')
     }
-    return false
   }
   return (
     <View style={styles.container}>
@@ -30,6 +35,7 @@ const Login = () => {
           style={styles.input}
         />
         <TouchableOpacity
+          onPress={() => checkUserData()}
           style={styles.button}
         >
           <Text style={styles.buttonText}>Login</Text>
