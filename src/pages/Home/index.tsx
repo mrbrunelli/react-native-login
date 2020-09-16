@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { useRoute } from '@react-navigation/native'
+import Icon from 'react-native-vector-icons/Feather'
 
 interface Params {
   email: string
@@ -13,7 +14,9 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.helloView}>
-        <Text style={styles.helloText}>Hello {email} :D</Text>
+        <Text style={styles.helloText}>
+          Hello {email} <Icon name="smile" size={20} />
+        </Text>
       </View>
       <View style={styles.boxView}>
         <View style={styles.box}>
