@@ -5,8 +5,8 @@
 - [x] [React Navigation](https://reactnavigation.org/docs/getting-started/)
 
 ## App
-> Login screen
-![](./assets/screen1.png)
 
-> Home screen
-![](./assets/screen2.png)
+<section align="center">
+  <img src="./assets/screen1.png" width="200">
+  <img src="./assets/screen2.png" width="200">
+</section>
