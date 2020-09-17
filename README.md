@@ -6,9 +6,7 @@
 
 ## App
 
-<section align="center">
-  <section>
+<span align="center">
     <img src="./assets/screen1.png" width="200">
     <img src="./assets/screen2.png" width="200">
-  </section>
-</section>
+</span>
