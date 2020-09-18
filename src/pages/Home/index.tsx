@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { useRoute } from '@react-navigation/native'
 import Icon from 'react-native-vector-icons/Feather'
@@ -7,8 +7,7 @@ interface Params {
   email: string
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const Home = () => {
+const Home = (): ReactElement => {
   const route = useRoute()
   const { email } = route.params as Params
   return (
