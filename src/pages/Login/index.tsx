@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import Icon from 'react-native-vector-icons/Feather'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Login = () => {
@@ -21,6 +22,9 @@ const Login = () => {
   return (
     <View style={styles.container}>
       <View style={styles.inputView}>
+        <View style={styles.iconView}>
+          <Icon name="feather" size={50} color="blue" />
+        </View>
         <TextInput
           onChangeText={text => setEmail(text)}
           value={email}
@@ -75,6 +79,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#fff',
     textAlign: 'center'
+  },
+  iconView: {
+    marginBottom: 20
   }
 })
 
