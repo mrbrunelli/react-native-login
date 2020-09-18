@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
 import { useRoute } from '@react-navigation/native'
+import { Text, View, StyleSheet, ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/Feather'
+import UserList from '../../components/UserList'
 import { randomMoneyValue } from '../../helpers/random-money-value'
 
 interface Params {
@@ -30,6 +31,11 @@ const Home = (): ReactElement => {
           </View>
         </View>
       </View>
+      <Text style={styles.title}>List of users</Text>
+
+      <ScrollView style={styles.scroll}>
+        <UserList/>
+      </ScrollView>
     </View>
   )
 }
@@ -41,7 +47,6 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   boxView: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
@@ -78,6 +83,17 @@ const styles = StyleSheet.create({
   helloView: {
     width: 300,
     marginTop: 10
+  },
+  scroll: {
+    margin: 20,
+    backgroundColor: '#fff',
+    padding: 20,
+    borderRadius: 20
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    margin: 10
   }
 })
 
