@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   scroll: {
     margin: 20,
     backgroundColor: '#fff',
-    padding: 20,
+    padding: 10,
     borderRadius: 20
   },
   title: {
