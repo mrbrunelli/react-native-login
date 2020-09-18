@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { useRoute } from '@react-navigation/native'
 import Icon from 'react-native-vector-icons/Feather'
+import { randomMoneyValue } from '../../helpers/random-money-value'
 
 interface Params {
   email: string
@@ -20,12 +21,12 @@ const Home = (): ReactElement => {
       <View style={styles.boxView}>
         <View style={styles.box}>
           <View style={styles.boxItem}>
-            <Text style={styles.boxText}>R$ 140.244,59</Text>
+            <Text style={styles.boxText}>{randomMoneyValue()}</Text>
           </View>
         </View>
         <View style={styles.box}>
           <View style={styles.boxItem}>
-            <Text style={styles.boxText}>R$ 140.244,59</Text>
+            <Text style={styles.boxText}>{randomMoneyValue()}</Text>
           </View>
         </View>
       </View>
