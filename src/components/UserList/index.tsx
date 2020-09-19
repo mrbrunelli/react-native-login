@@ -21,7 +21,8 @@ const UserList = (): ReactElement => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 15
+    padding: 15,
+    width: 300
   },
   item: {
     fontSize: 16
@@ -30,13 +31,15 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: 300
+    width: '100%',
+    borderBottomWidth: 0.5,
+    borderColor: '#ccc'
   },
   header: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: 300
+    width: '100%'
   },
   headerTitle: {
     fontSize: 18,
