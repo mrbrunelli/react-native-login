@@ -20,12 +20,12 @@ const Home = (): ReactElement => {
         </Text>
       </View>
       <View style={styles.boxView}>
-        <View style={styles.box}>
+        <View style={[styles.box, styles.shadow]}>
           <View style={styles.boxItem}>
             <Text style={styles.boxText}>{randomMoneyValue()}</Text>
           </View>
         </View>
-        <View style={styles.box}>
+        <View style={[styles.box, styles.shadow]}>
           <View style={styles.boxItem}>
             <Text style={styles.boxText}>{randomMoneyValue()}</Text>
           </View>
@@ -33,7 +33,7 @@ const Home = (): ReactElement => {
       </View>
       <Text style={styles.title}>List of users</Text>
 
-      <ScrollView style={styles.scroll}>
+      <ScrollView style={[styles.scroll, styles.shadow]}>
         <UserList/>
       </ScrollView>
     </View>
@@ -58,15 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 20,
     borderRadius: 20,
-    margin: 10,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 4
-    },
-    shadowOpacity: 0.50,
-    shadowRadius: 4.84,
-    elevation: 8
+    margin: 10
   },
   boxItem: {
     flex: 1,
@@ -94,6 +86,16 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: 'bold',
     margin: 10
+  },
+  shadow: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4
+    },
+    shadowOpacity: 0.50,
+    shadowRadius: 4.84,
+    elevation: 8
   }
 })
 
