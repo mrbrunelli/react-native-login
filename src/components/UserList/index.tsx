@@ -11,8 +11,8 @@ const UserList = (): ReactElement => {
       </View>
       <FlatList
         data={userList}
-        renderItem={({ item }) => (
-          <View style={styles.container}>
+        renderItem={({ item, index }) => (
+          <View key={index} style={styles.container}>
             <Text style={styles.item}>{item.name}</Text>
             <Text style={styles.item}>{item.age} | {item.weight}</Text>
           </View>
