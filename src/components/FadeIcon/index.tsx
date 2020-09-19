@@ -2,7 +2,7 @@ import React, { useRef, useEffect, ReactElement, ReactComponentElement } from 'r
 import { Animated } from 'react-native'
 import Icon from 'react-native-vector-icons/Feather'
 
-const FadeInIcon = (): ReactElement => {
+const FadeIcon = (): ReactElement => {
   useEffect(() => {
     fadeIn()
   },[])
@@ -23,4 +23,4 @@ const FadeInIcon = (): ReactElement => {
   )
 }
 
-export default FadeInIcon
+export default FadeIcon

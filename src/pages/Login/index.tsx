@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, ReactElement } from 'react'
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, Alert, Animated } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import FadeInIcon from '../../components/FadeInIcon'
+import FadeIcon from '../../components/FadeIcon'
 
 const Login = (): ReactElement => {
   const navigation = useNavigation()
@@ -22,7 +22,7 @@ const Login = (): ReactElement => {
     <View style={styles.container}>
       <View style={styles.inputView}>
         <View style={styles.iconView}>
-          <FadeInIcon/>
+          <FadeIcon/>
         </View>
         <TextInput
           onChangeText={text => setEmail(text)}
