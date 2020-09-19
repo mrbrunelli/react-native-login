@@ -32,7 +32,6 @@ const Home = (): ReactElement => {
         </View>
       </View>
       <Text style={styles.title}>List of users</Text>
-
       <ScrollView style={[styles.scroll, styles.shadow]}>
         <UserList/>
       </ScrollView>
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 26,
     fontWeight: 'bold',
-    margin: 10
+    marginTop: 10
   },
   shadow: {
     shadowColor: '#000',
