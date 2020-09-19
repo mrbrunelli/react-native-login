@@ -28,6 +28,7 @@ const Login = (): ReactElement => {
           onChangeText={text => setEmail(text)}
           value={email}
           placeholder="Enter a valid e-mail"
+          autoCorrect={false}
           style={styles.input}
         />
         <TextInput
