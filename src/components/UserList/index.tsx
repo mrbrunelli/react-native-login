@@ -22,7 +22,7 @@ const UserList = (): ReactElement => {
 const styles = StyleSheet.create({
   container: {
     padding: 15,
-    width: 300
+    width: '100%'
   },
   item: {
     fontSize: 16
