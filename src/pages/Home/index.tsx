@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 import { useRoute } from '@react-navigation/native'
-import { Text, View, StyleSheet, ScrollView, ActivityIndicator } from 'react-native'
+import { Text, View, StyleSheet, ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/Feather'
 import UserList from '../../components/UserList'
 import { randomMoneyValue } from '../../helpers/random-money-value'
